@@ -21,6 +21,7 @@ app.use('/uploads', express.static('uploads'));
 
 app.post('/upload', upload.single('file'), (req, res) => {
   if (!req.file) {
+    console.error('No file uploaded.');
     return res.status(400).send('No file uploaded.');
   }
 
