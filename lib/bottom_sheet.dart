@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:http/http.dart' as http;
 
+
 class BottomSheetWidget extends StatefulWidget {
   @override
   _BottomSheetWidgetState createState() => _BottomSheetWidgetState();
@@ -66,7 +67,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
             const SizedBox(height: 10),
             Text(
               isReadyToUpload
-                  ? '${result?.files.length} Ready to upload'
+                  ? '${result?.files.length} Files Ready to upload'
                   : 'Select your files',
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
