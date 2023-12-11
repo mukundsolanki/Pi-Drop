@@ -31,6 +31,21 @@ app.get('/files', async (req, res) => {
   }
 });
 
+// Route to handle file downloads
+app.get('/uploads/:fileName', async (req, res) => {
+  const fileName = req.params.fileName;
+  const filePath = path.join(uploadDir, fileName);
+
+  try {
+    // Check if the file exists before sending it
+    await fs.access(filePath, fs.constants.F_OK);
+    res.sendFile(filePath);
+  } catch (err) {
+    console.error(`File not found: ${filePath}`);
+    res.status(404).send('File not found');
+  }
+});
+
 // Route to handle file uploads
 app.post('/upload', upload.single('file'), (req, res) => {
   if (!req.file) {
