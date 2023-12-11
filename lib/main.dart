@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'bottom_sheet.dart';
+import 'details_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,14 +40,8 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
           title: const Text("File picker demo"),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(30.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              const Spacer(),
-              
-            ],
-          ),
+          padding: const EdgeInsets.all(20.0),
+          child: DetailsWidget(),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
