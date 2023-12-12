@@ -14,9 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'File picker demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
+        hintColor: Colors.orangeAccent,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const PiDrop(title: 'Pi-Drop'),
+      home: const PiDrop(title: 'PI DROP'),
     );
   }
 }
@@ -37,7 +39,14 @@ class _PiDropState extends State<PiDrop> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Pi-Drop"),
+          title: Center(
+            child: Text(
+              widget.title,
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
         ),
         body: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -49,6 +58,7 @@ class _PiDropState extends State<PiDrop> {
           },
           tooltip: 'Open Bottom Sheet',
           child: const Icon(Icons.add),
+          backgroundColor: Colors.orangeAccent, // Match accent color
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),

@@ -49,8 +49,8 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
-                    width: 2.0,
-                    color: isReadyToUpload ? Colors.green : Colors.blue,
+                    width: 5.0,
+                    color: isReadyToUpload ? Colors.green : Colors.orangeAccent,
                   ),
                   color: isReadyToUpload ? Colors.green : Colors.transparent,
                 ),
@@ -59,7 +59,7 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
                   child: Icon(
                     isReadyToUpload ? Icons.check : Icons.add,
                     size: 40.0,
-                    color: isReadyToUpload ? Colors.white : Colors.blue,
+                    color: isReadyToUpload ? Colors.white : Colors.black,
                   ),
                 ),
               ),
