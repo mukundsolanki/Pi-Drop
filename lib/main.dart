@@ -16,28 +16,28 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const FilePickerDemo(title: 'File picker demo'),
+      home: const PiDrop(title: 'Pi-Drop'),
     );
   }
 }
 
-class FilePickerDemo extends StatefulWidget {
-  const FilePickerDemo({Key? key, required this.title}) : super(key: key);
+class PiDrop extends StatefulWidget {
+  const PiDrop({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _FilePickerDemoState createState() => _FilePickerDemoState();
+  _PiDropState createState() => _PiDropState();
 }
 
-class _FilePickerDemoState extends State<FilePickerDemo> {
+class _PiDropState extends State<PiDrop> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("File picker demo"),
+          title: const Text("Pi-Drop"),
         ),
         body: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -50,7 +50,7 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
           tooltip: 'Open Bottom Sheet',
           child: const Icon(Icons.add),
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),
     );
   }
