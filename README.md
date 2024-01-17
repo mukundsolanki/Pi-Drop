@@ -39,4 +39,4 @@ Before using the Flutter NAS File Manager, ensure the following:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [GPL 3.0](https://github.com/mukundsolanki/Pi-Drop?tab=GPL-3.0-1-ov-file#readme)
