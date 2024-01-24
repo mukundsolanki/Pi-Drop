@@ -27,15 +27,15 @@ Before using the Flutter NAS File Manager, ensure the following:
 
 2. Setup Raspberry Pi Backend:
 
-- Refer to the backend code (/backend directory) for Raspberry Pi setup instructions.
+   Refer to the backend code (/backend directory) for Raspberry Pi setup instructions.
 
 3. Configure Flutter App:
 
-- update the necessary configuration, such as the Raspberry Pi server IP address and port.
+   update the necessary configuration, such as the Raspberry Pi server IP address and port.
 
 4. Run the Flutter App:
 
-- flutter run
+   flutter run
 
 ## License
 
