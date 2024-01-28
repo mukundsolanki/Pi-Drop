@@ -1,7 +1,5 @@
 # Pi-Drop
 
-## Overview
-
 The Pi-Drop is a mobile application designed to facilitate file uploads and downloads with a Raspberry Pi NAS(Network as Storage) server. This app allows users to seamlessly upload files to the Raspberry Pi server and retrieve them whenever needed.
 
 ## Features
