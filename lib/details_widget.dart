@@ -56,8 +56,9 @@ class _DetailsWidgetState extends State<DetailsWidget> {
         File file = File(filePath);
         await file.writeAsBytes(response.bodyBytes);
 
+        // Snackbar provides an pop up from  bottom like a toast message
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-          content: Text('File downloaded successfully: $filePath'),
+          content: Text('File saved successfully at: $filePath'),
         ));
       } else {
         throw Exception(
